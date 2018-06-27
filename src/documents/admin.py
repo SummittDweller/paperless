@@ -131,7 +131,8 @@ class DocumentAdmin(CommonAdmin):
     list_filter = ("tags", "correspondent", FinancialYearFilter,
                    MonthListFilter)
 
-    ordering = ["-created", "correspondent"]
+#   ordering = ["-created", "correspondent"]
+    ordering = ["-added", "correspondent"]
 
     def has_add_permission(self, request):
         return False
