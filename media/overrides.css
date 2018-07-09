@@ -1,0 +1,54 @@
+/* MAM customizations follow */
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+  font-weight: bold !important;
+}
+
+.result .header {
+  background-color: #6b1874 !important;
+}
+
+#header {
+  background-color: #603cba !important;
+}
+
+div.breadcrumbs {
+  background-color: #9f00a7 !important;
+}
+
+.module h2 {
+  background-color: #6b1874 !important;
+}
+
+.result .header .info {
+  color: #eaf26b !important;
+  margin: 0 0 0 25px !important;
+  font-weight: bold !important;
+}
+
+.result .header .checkbox {
+  padding: 0 3px !important;
+}
+
+.result .header a {
+  color: white !important;
+  padding: 5px !important;
+  margin: -5px !important;
+}
+
+#changelist-filter {
+  border: 1px solid gray !important;
+}
+
+#content-related .module h2 {
+  color: white;
+}
+
+.button:active, input[type="submit"]:active, input[type="button"]:active, .button:focus, input[type="submit"]:focus, input[type="button"]:focus, .button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background: #6b1874 !important;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #6b1874 !important;
+    color: #fff;
+}
