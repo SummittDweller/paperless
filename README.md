@@ -81,3 +81,12 @@ Document scanners are typically used to scan sensitive documents.  Things like y
 As with all Free software, the power is less in the finances and more in the collective efforts.  I really appreciate every pull request and bug report offered up by Paperless' users, so please keep that stuff coming.  If however, you're not one for coding/design/documentation, and would like to contribute financially, I won't say no ;-)
 
 The thing is, I'm doing ok for money, so I would instead ask you to donate to the [United Nations High Commissioner for Refugees](https://donate.unhcr.org/int-en/general). They're doing important work and they need the money a lot more than I do.
+
+## Required CentOS Host Change
+
+This thing rocks! So, I honestly didn't believe that making a config change to the host would solve this problem, but it did! The change I made was suggested for a similar error in a different Docker context...
+```
+cat /proc/sys/fs/inotify/max_user_watches    # default is 8192 
+sudo sysctl fs.inotify.max_user_watches=1048576    # increase to 1048576
+```
+Now the consume container runs and it does indeed consume documents dropped in the target folder. 
