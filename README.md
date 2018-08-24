@@ -90,3 +90,7 @@ cat /proc/sys/fs/inotify/max_user_watches    # default is 8192
 sudo sysctl fs.inotify.max_user_watches=1048576    # increase to 1048576
 ```
 Now the consume container runs and it does indeed consume documents dropped in the target folder. 
+
+## Backups
+
+[mark@centos7 paperless]$ docker-compose run --rm consumer document_exporter /export
